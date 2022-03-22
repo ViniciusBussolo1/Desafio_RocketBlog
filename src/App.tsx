@@ -2,6 +2,7 @@ import Logo from "./images/logo.svg";
 import Search from "./images/search.svg";
 import Featured from "./images/featured-image.png";
 import ArrowRight from "./images/arrow-right.svg";
+import Post1 from "./images/post-1.png";
 import "./styles.scss";
 
 function App() {
@@ -47,6 +48,44 @@ function App() {
           </div>
         </div>
       </div>
+
+      <section className="section-1">
+        <div>
+          <img src={Post1} alt="post-1" />
+          <span>Janeiro 04, 2022 </span>
+          <h2> Começando no ReactJS em 2022</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+            eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
+            sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed
+            volutpat aenean sit vitae, sed tristique. Sed volutpat aenean.
+          </p>
+        </div>
+
+        <div className="side-post">
+          <div className="post-1">
+            <span>Janeiro 04, 2022 </span>
+            <h2>
+              Conheça as principais técnicas para conseguir uma vaga
+              internacional em programação
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+              eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
+              sed tristique nibh nibh eu in aliquet ut adipiscing neque.
+            </p>
+          </div>
+          <div className="post-2">
+            <span>Janeiro 04, 2022 </span>
+            <h2>Veja a evolução do Front-end na prática</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+              eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
+              sed tristique nibh nibh eu in aliquet ut adipiscing neque.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
