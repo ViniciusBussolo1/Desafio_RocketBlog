@@ -3,6 +3,9 @@ import Search from "./images/search.svg";
 import Featured from "./images/featured-image.png";
 import ArrowRight from "./images/arrow-right.svg";
 import Post1 from "./images/post-1.png";
+import Post2 from "./images/post-2.png";
+import Post3 from "./images/post-3.png";
+import Post4 from "./images/post-4.png";
 import "./styles.scss";
 
 function App() {
@@ -84,6 +87,39 @@ function App() {
               sed tristique nibh nibh eu in aliquet ut adipiscing neque.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="section-2">
+        <div className="card-1">
+          <img src={Post2} alt="imagem primeiro card" />
+          <span>Janeiro 04, 2022 </span>
+          <h2>Veja a evolução do Front-end na prática</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+            eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
+            sed tristique nibh nibh eu in aliquet ut adipiscing neque.
+          </p>
+        </div>
+        <div className="card-1">
+          <img src={Post3} alt="imagem primeiro card" />
+          <span>Janeiro 04, 2022 </span>
+          <h2>Veja a evolução do Front-end na prática</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+            eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
+            sed tristique nibh nibh eu in aliquet ut adipiscing neque.
+          </p>
+        </div>
+        <div className="card-1">
+          <img src={Post4} alt="imagem primeiro card" />
+          <span>Janeiro 04, 2022 </span>
+          <h2>Veja a evolução do Front-end na prática</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+            eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
+            sed tristique nibh nibh eu in aliquet ut adipiscing neque.
+          </p>
         </div>
       </section>
     </>

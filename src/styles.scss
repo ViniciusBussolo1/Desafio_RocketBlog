@@ -89,6 +89,12 @@ body {
     }
   }
 
+  button:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
   .content {
     width: 73.071rem;
 
@@ -147,6 +153,8 @@ body {
   display: flex;
   justify-content: space-between;
 
+  cursor: pointer;
+
   div {
     width: 35.563rem;
 
@@ -182,5 +190,45 @@ body {
 
       margin-top: 4rem;
     }
+  }
+}
+
+.section-2 {
+  height: 28.659rem;
+  width: 73.071rem;
+
+  margin: 4rem auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  div {
+    width: 23.125rem;
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      color: var(--purple-bg);
+      text-align: justify;
+
+      margin-top: 1rem;
+    }
+
+    p {
+      margin-top: 1rem;
+      text-align: justify;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
   }
 }
