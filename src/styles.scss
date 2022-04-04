@@ -28,7 +28,8 @@ body {
 
   .header {
     height: 2.75rem;
-    width: 73.071rem;
+    width: 90%;
+    max-width: 73.071rem;
 
     margin: 0 auto;
 
@@ -96,7 +97,8 @@ body {
   }
 
   .content {
-    width: 73.071rem;
+    width: 90%;
+    max-width: 73.071rem;
 
     margin: 5rem auto;
 
@@ -146,17 +148,17 @@ body {
 
 .section-1 {
   height: 34.131rem;
-  width: 73.071rem;
+  width: 90%;
+  max-width: 73.071rem;
 
   margin: 4rem auto;
 
   display: flex;
   justify-content: space-between;
 
-  cursor: pointer;
-
   div {
     width: 35.563rem;
+    cursor: pointer;
 
     span {
       font-style: normal;
@@ -179,14 +181,17 @@ body {
 
   .side-post {
     height: 25.909rem;
-    width: 29.5rem;
+    
 
     .post-1 {
       width: 100%;
+      cursor: pointer;
     }
 
     .post-2 {
       width: 100%;
+
+      cursor: pointer;
 
       margin-top: 4rem;
     }
@@ -194,19 +199,22 @@ body {
 }
 
 .section-2 {
-  height: 28.659rem;
-  width: 73.071rem;
+  height: 31rem;
+  width: 90%;
+  max-width: 72rem;
 
-  margin: 4rem auto;
+  margin: auto;
 
-  display: flex;
-  justify-content: space-between;
-
-  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 4.2rem;
 
   div {
-    width: 23.125rem;
+    cursor: pointer;
 
+    img {
+      width: 100%;
+    }
     span {
       font-style: normal;
       font-weight: 400;
@@ -227,8 +235,70 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  .content {
-    flex-direction: column;
+@media (max-width: 1244px) {
+  body {
+    overflow-x: hidden;
+  }
+  .section-2 {
+    .card {
+      h2 {
+        width: 24rem;
+      }
+
+      p {
+        width: 24rem;
+      }
+    }
   }
 }
+
+@media (max-width: 1169px) {
+  .home {
+    width: 100vw;
+    height: 52rem;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-info {
+    margin-top: 2rem;
+  }
+
+  .info {
+    margin: auto;
+  }
+
+  img {
+    order: -1;
+  }
+
+  .section-1 {
+    height: 60rem;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .side-post {
+    margin-top: 2rem;
+  }
+
+  .section-2 {
+    padding: 0 4rem;
+  }
+
+  .card {
+    span {
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
